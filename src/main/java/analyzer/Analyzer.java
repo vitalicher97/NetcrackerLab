@@ -46,8 +46,8 @@ public class Analyzer {
      * @throws IllegalAccessException
      * @throws IllegalArgumentException
      * @throws InvocationTargetException
-     * 
-     * This method calls findGenMethods, findSortClasses and findDeclPublMethod
+     * <br>
+     * Analyze method calls findGenMethods, findSortClasses and findDeclPublMethod
      * methods to recieve generated arrays and to sort them
      */
     public void analyze(int inpLen) throws InstantiationException, IllegalAccessException,
