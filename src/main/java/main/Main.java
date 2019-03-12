@@ -20,7 +20,8 @@ public class Main {
      * @throws IllegalArgumentException
      * @throws InvocationTargetException 
      * <br><br>
-     * Main method provides scanning of the user's input and calls analyzer
+     * Main method provides scanning of the user's input and
+     * calls {@see analyzer}
      */
     public static void main(String[] args) throws InstantiationException,
             IllegalAccessException, IllegalArgumentException,
