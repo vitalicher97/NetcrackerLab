@@ -3,8 +3,21 @@ package sorts;
 
 import java.util.Arrays;
 
-
+/**
+ * 
+ * @author Chernetskyi
+ * MergeSort class contains methods needed for performing different types of
+ * merge sorting
+ */
 public class MergeSort extends AbstractSorter{
+    /**
+     * 
+     * @param arr array to be sorted
+     * @param handle string name that defines which additional sort type will be
+     * used for intermidiate sortings
+     * <br><br>
+     * mergeSort method performs sorting using merge type sort
+     */
     private void mergeSort(int arr[], String handle){
         
         int len = arr.length;
@@ -70,19 +83,43 @@ public class MergeSort extends AbstractSorter{
         
     }
     
-    
+    /**
+     * 
+     * @param arr array to be sorted
+     * <br><br>
+     * mergeViaBubbleSort1 method calls {@link mergeSort} method and declare which
+     * additional sort type to use for intermidiate sortings
+     */
     public void mergeViaBubbleSort1(int arr[]){
         mergeSort(arr, "BubbleSort1");
     }
-    
+    /**
+     * 
+     * @param arr array to be sorted
+     * <br><br>
+     * mergeViaBubbleSort2 method calls {@link mergeSort} method and declare which
+     * additional sort type to use for intermidiate sortings
+     */
     public void mergeViaBubbleSort2(int arr[]){
         mergeSort(arr, "BubbleSort2");
     }
-    
+    /**
+     * 
+     * @param arr array to be sorted
+     * <br><br>
+     * mergeViaQuickSort method calls {@link mergeSort} method and declare which
+     * additional sort type to use for intermidiate sortings
+     */
     public void mergeViaQuickSort(int arr[]){
         mergeSort(arr, "QuickSort");
     }
-    
+    /**
+     * 
+     * @param arr array to be sorted
+     * <br><br>
+     * mergeViaUsualSort method calls {@link mergeSort} method and declare which
+     * additional sort type to use for intermidiate sortings
+     */
     public void mergeViaUsualSort(int arr[]){
         mergeSort(arr, "UsualSort");
     }
