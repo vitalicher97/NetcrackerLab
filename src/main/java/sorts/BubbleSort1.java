@@ -10,7 +10,7 @@ package sorts;
 public class BubbleSort1 extends BubbleSorter{
     /**
      * 
-     * @param arr array for sorting
+     * @param arr array that be sorted
      * <br><br>
      * bubbleSort1 method sorts array using bubble sort type
      */
