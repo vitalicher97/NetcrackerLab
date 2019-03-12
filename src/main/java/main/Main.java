@@ -18,7 +18,7 @@ public class Main {
      * @throws InstantiationException
      * @throws IllegalAccessException
      * @throws IllegalArgumentException
-     * @throws InvocationTargetException because of exceptions in analyze method
+     * @throws InvocationTargetException
      * <br><br>
      * Main method provides scanning of the user's input and
      * calls {@link analyze}
