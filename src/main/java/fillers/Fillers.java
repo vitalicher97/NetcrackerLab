@@ -25,7 +25,13 @@ public class Fillers{
     
     
     
-    // For random fill
+    /**
+     * 
+     * @param inpLen the size of array to generate
+     * @return an array
+     * <br><br>
+     * Method genRand generates random array
+     */
     @Generator
     public static int[] genRand(int inpLen){  
         int[] dataRand = new int[inpLen];  
@@ -33,7 +39,13 @@ public class Fillers{
         return dataRand;
     }
     
-    // For sorted random fill
+    /**
+     * 
+     * @param inpLen the size of array to generate
+     * @return an array
+     * <br><br>
+     * Method genSort generates array with random values and then sorts it
+     */
     @Generator
     public static int[] genSort(int inpLen){  
         int[] dataSort = new int[inpLen];  
@@ -43,7 +55,14 @@ public class Fillers{
         return dataSort;
     }
     
-    // For sorted rand fill with last rand val
+    /**
+     * 
+     * @param inpLen the size of array to generate
+     * @return an array
+     * <br><br>
+     * Method genSortX generates array with random values and then sorts it and
+     * than adds random value in the end of array
+     */
     @Generator
     public static int[] genSortX(int inpLen){  
         int[] dataSortX = new int[inpLen]; 
@@ -54,7 +73,13 @@ public class Fillers{
         return dataSortX;
     }
     
-    // For descending sorted rand fill
+    /**
+     * 
+     * @param inpLen the size of array to generate
+     * @return an array
+     * <br><br>
+     * Method genSortD generates array with descending sorted elements
+     */
     @Generator
     public static int[] genSortD(int inpLen){
         int[] dataSortD = new int[inpLen];
@@ -70,10 +95,20 @@ public class Fillers{
         return dataSortD;
     }
     
+    /**
+     * 
+     * @param inpLen the number of random values to generate
+     * @return array of random values
+     * <br><br>
+     */
     private static int[] random(int inpLen){
         return new Random().ints(inpLen, 0, 101).toArray();
     }
     
+    /**
+     * 
+     * @return one random value
+     */
     private static int randomX(){
         int[] tempArr = new int[1];
         tempArr = new Random().ints(1, 0, 101).toArray();
