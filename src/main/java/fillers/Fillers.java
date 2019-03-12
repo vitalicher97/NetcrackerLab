@@ -6,6 +6,13 @@ import sorts.*;
 import java.util.Random;
 import java.lang.annotation.*;
 
+/**
+ * 
+ * @author Chernetskyi
+ * 
+ * Fillers class contains methods for generation of different types of arrays
+ * 
+ */
 public class Fillers{
     
     
