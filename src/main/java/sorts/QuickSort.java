@@ -1,14 +1,27 @@
 
 package sorts;
 
-
+/**
+ * 
+ * @author Chernetskyi
+ * 
+ * QuickSort class performs sorting using quicksort sort method
+ */
 public class QuickSort extends AbstractSorter {
-    /* This function takes last element as pivot, 
+    /**
+     * 
+     * @param arr array to be sorted
+     * @param low for defining element that is smaller than pivot
+     * @param high for defining element that is greater than pivot
+     * @return pivot
+     * <br><br>
+     * partition method takes last element as pivot, 
        places the pivot element at its correct 
        position in sorted array, and places all 
        smaller (smaller than pivot) to left of 
        pivot and all greater elements to right 
-       of pivot */
+       of pivot
+     */
     private int partition(int arr[], int low, int high){
         int pivot = arr[high];
         int i = (low-1);  // index of smaller element
@@ -34,10 +47,18 @@ public class QuickSort extends AbstractSorter {
     }
     
     
-    /* The main function that implements QuickSort() 
-      arr[] --> Array to be sorted, 
-      low  --> Starting index, 
-      high  --> Ending index */
+    /**
+     * 
+     * @param arr array to be sorted
+     * @param low initial element that is smaller than pivot (should be 0)
+     * @param high initial element that greater than pivot (should be the last
+     * element of an array)
+     * <br><br>
+     * quicksort method is the main function that implements QuickSort() <br>
+     * arr[] --> Array to be sorted, <br>
+     * low  --> Starting index, <br>
+     * high  --> Ending index <br>
+     */
     private void quicksort(int arr[], int low, int high){
         
         if(low < high){
@@ -53,7 +74,13 @@ public class QuickSort extends AbstractSorter {
         }
     }
     
-    
+    /**
+     * 
+     * @param arr array to be sorted
+     * <br><br>
+     * prepForQuicksort method calls quicksort method and send additional values
+     * nedded for quicksort sorting method
+     */
     public void prepForQuicksort(int arr[]){
         quicksort(arr, 0, arr.length-1);
     }
