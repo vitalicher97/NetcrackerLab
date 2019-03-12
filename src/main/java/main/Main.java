@@ -18,10 +18,10 @@ public class Main {
      * @throws InstantiationException
      * @throws IllegalAccessException
      * @throws IllegalArgumentException
-     * @throws InvocationTargetException 
+     * @throws InvocationTargetException because of exceptions in analyze method
      * <br><br>
      * Main method provides scanning of the user's input and
-     * calls {@see analyzer}
+     * calls {@link analyze}
      */
     public static void main(String[] args) throws InstantiationException,
             IllegalAccessException, IllegalArgumentException,
