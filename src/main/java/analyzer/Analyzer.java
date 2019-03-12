@@ -9,19 +9,47 @@ import fillers.*;
 import java.util.*;
 import java.lang.reflect.*;
 
+/**
+ * 
+ * @author Chernetskyi
+ * 
+ * Analyzer contains methods for defining current time, to calculate duration
+ * and to recieve generated arrays and pushing them to sort methods
+ */
 public class Analyzer {
     
     Output print = new Output();
     
+    /**
+     * 
+     * @return current time in nanoseconds
+     */
     public long time(){  
         return System.nanoTime();
     }
     
+    /**
+     * 
+     * @param start is initial time
+     * @param end is finish time
+     * @return difference between finish and initial time
+     */
     public long duration(long start, long end){
         long duration = end - start;
         return duration;
     }
     
+    /**
+     * 
+     * @param inpLen is the maximum array size
+     * @throws InstantiationException
+     * @throws IllegalAccessException
+     * @throws IllegalArgumentException
+     * @throws InvocationTargetException
+     * 
+     * This method calls findGenMethods, findSortClasses and findDeclPublMethod
+     * methods to recieve generated arrays and to sort them
+     */
     public void analyze(int inpLen) throws InstantiationException, IllegalAccessException,
             IllegalArgumentException, InvocationTargetException{
         Reflection refl = new Reflection();
