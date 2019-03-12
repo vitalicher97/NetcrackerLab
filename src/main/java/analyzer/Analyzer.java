@@ -8,8 +8,6 @@ import sorts.*;
 import fillers.*;
 import java.util.*;
 import java.lang.reflect.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class Analyzer {
     
