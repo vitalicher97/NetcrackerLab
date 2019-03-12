@@ -1,8 +1,19 @@
 
 package sorts;
 
-
+/**
+ * 
+ * @author Chernetskyi
+ * 
+ * BubbleSort1 class contains method for sorting by bubblesort method
+ */
 public class BubbleSort1 extends BubbleSorter{
+    /**
+     * 
+     * @param arr array for sorting
+     * <br><br>
+     * bubbleSort1 method sorts array using bubble sort type
+     */
     public void bubbleSort1(int arr[]){
         boolean check = false;  // Flag for checking if any changes in sort loop
         int temp;
