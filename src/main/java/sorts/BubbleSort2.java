@@ -1,9 +1,21 @@
 
 package sorts;
 
-
+/**
+ * 
+ * @author Chernetskyi
+ * 
+ * BubbleSort2 class contains method for sorting by bubblesort method but
+ * in descending type (not order, array will be sorted in ascending mode)
+ */
 public class BubbleSort2 extends BubbleSorter{
-    // Ascending sorting, but from array's end
+    /**
+     * 
+     * @param arr array that be sorted
+     * <br><br>
+     * bubbleSort2 method performs ascending sorting, but from array's end,
+     * by bubble type
+     */
     public void bubbleSort2(int arr[]){
         boolean check = false;
         int temp;
