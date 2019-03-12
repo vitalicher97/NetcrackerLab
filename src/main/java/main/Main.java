@@ -15,12 +15,11 @@ public class Main {
     
     /**
      * 
-     * @param args
      * @throws InstantiationException
      * @throws IllegalAccessException
      * @throws IllegalArgumentException
      * @throws InvocationTargetException 
-     * 
+     * <br><br>
      * Main method provides scanning of the user's input and calls analyzer
      */
     public static void main(String[] args) throws InstantiationException,
