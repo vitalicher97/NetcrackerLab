@@ -15,13 +15,8 @@ public class Main {
     
     /**
      * 
-     * @throws InstantiationException
-     * @throws IllegalAccessException
-     * @throws IllegalArgumentException
-     * @throws InvocationTargetException
      * <br><br>
      * Main method provides scanning of the user's input and
-     * calls {@link analyze}
      */
     public static void main(String[] args) throws InstantiationException,
             IllegalAccessException, IllegalArgumentException,
