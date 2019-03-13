@@ -87,7 +87,7 @@ public class MergeSort extends AbstractSorter{
      * 
      * @param arr array to be sorted
      * <br><br>
-     * mergeViaBubbleSort1 method calls {@link mergeSort} method and declare which
+     * mergeViaBubbleSort1 method calls mergeSort method and declare which
      * additional sort type to use for intermidiate sortings
      */
     public void mergeViaBubbleSort1(int arr[]){
@@ -97,7 +97,7 @@ public class MergeSort extends AbstractSorter{
      * 
      * @param arr array to be sorted
      * <br><br>
-     * mergeViaBubbleSort2 method calls {@link mergeSort} method and declare which
+     * mergeViaBubbleSort2 method calls mergeSort method and declare which
      * additional sort type to use for intermidiate sortings
      */
     public void mergeViaBubbleSort2(int arr[]){
@@ -107,7 +107,7 @@ public class MergeSort extends AbstractSorter{
      * 
      * @param arr array to be sorted
      * <br><br>
-     * mergeViaQuickSort method calls {@link mergeSort} method and declare which
+     * mergeViaQuickSort method calls mergeSort method and declare which
      * additional sort type to use for intermidiate sortings
      */
     public void mergeViaQuickSort(int arr[]){
@@ -117,7 +117,7 @@ public class MergeSort extends AbstractSorter{
      * 
      * @param arr array to be sorted
      * <br><br>
-     * mergeViaUsualSort method calls {@link mergeSort} method and declare which
+     * mergeViaUsualSort method calls mergeSort method and declare which
      * additional sort type to use for intermidiate sortings
      */
     public void mergeViaUsualSort(int arr[]){
