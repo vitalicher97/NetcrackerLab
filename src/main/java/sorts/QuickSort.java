@@ -4,7 +4,7 @@ package sorts;
 /**
  * 
  * @author Chernetskyi
- * 
+ * <br><br>
  * QuickSort class performs sorting using quicksort sort method
  */
 public class QuickSort extends AbstractSorter {
