@@ -10,7 +10,7 @@ import org.reflections.scanners.MethodAnnotationsScanner;
 /**
  * 
  * @author Chernetskyi
- * 
+ * <br><br>
  * Reflection class contains methods thad use reflection for its execution
  */
 public class Reflection {
