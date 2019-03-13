@@ -6,6 +6,7 @@ import java.util.Arrays;
 /**
  * 
  * @author Chernetskyi
+ * <br><br>
  * MergeSort class contains methods needed for performing different types of
  * merge sorting
  */
