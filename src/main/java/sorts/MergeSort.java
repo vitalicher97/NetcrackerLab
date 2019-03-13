@@ -91,6 +91,7 @@ public class MergeSort extends AbstractSorter{
      * mergeViaBubbleSort1 method calls {@link #mergeSort(int[], java.lang.String) }
      * method and declare which
      * additional sort type to use for intermidiate sortings
+     * @see sorts.BubbleSort1#bubbleSort1(int[]) 
      */
     public void mergeViaBubbleSort1(int arr[]){
         mergeSort(arr, "BubbleSort1");
@@ -102,6 +103,7 @@ public class MergeSort extends AbstractSorter{
      * mergeViaBubbleSort2 method calls {@link #mergeSort(int[], java.lang.String) }
      * method and declare which
      * additional sort type to use for intermidiate sortings
+     * @see sorts.BubbleSort2#bubbleSort2(int[]) 
      */
     public void mergeViaBubbleSort2(int arr[]){
         mergeSort(arr, "BubbleSort2");
@@ -113,6 +115,7 @@ public class MergeSort extends AbstractSorter{
      * mergeViaQuickSort method calls {@link #mergeSort(int[], java.lang.String) }
      * method and declare which
      * additional sort type to use for intermidiate sortings
+     * @see sorts.QuickSort#prepForQuicksort(int[]) 
      */
     public void mergeViaQuickSort(int arr[]){
         mergeSort(arr, "QuickSort");
@@ -124,6 +127,7 @@ public class MergeSort extends AbstractSorter{
      * mergeViaUsualSort method calls {@link #mergeSort(int[], java.lang.String) }
      * method and declare which
      * additional sort type to use for intermidiate sortings
+     * @see sorts.UsualSort#usualSort(int[]) 
      */
     public void mergeViaUsualSort(int arr[]){
         mergeSort(arr, "UsualSort");
