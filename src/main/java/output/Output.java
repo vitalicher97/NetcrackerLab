@@ -6,7 +6,7 @@ package output;
 /**
  * 
  * @author Chernetskyi
- * 
+ * <br><br>
  * Output class contains method for printing results
  */
 public class Output {
