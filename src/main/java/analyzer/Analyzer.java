@@ -42,10 +42,6 @@ public class Analyzer {
     /**
      * 
      * @param inpLen is the maximum array size
-     * @throws InstantiationException
-     * @throws IllegalAccessException
-     * @throws IllegalArgumentException
-     * @throws InvocationTargetException 
      * <br><br>
      * Analyze method calls findGenMethods, findSortClasses and findDeclPublMethod
      * methods to recieve generated arrays and to sort them
