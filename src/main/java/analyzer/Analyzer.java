@@ -12,8 +12,8 @@ import java.lang.reflect.*;
 /**
  * 
  * @author Chernetskyi
- * 
- * Analyzer contains methods for defining current time, to calculate duration
+ * <br><br>
+ * Analyzer class contains methods for defining current time, to calculate duration
  * and to recieve generated arrays and pushing them to sort methods
  */
 public class Analyzer {
