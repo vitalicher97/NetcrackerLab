@@ -16,7 +16,9 @@ public class Main {
     /**
      * 
      * <br><br>
-     * Main method provides scanning of the user's input and
+     * Main method provides scanning of the user's input and calls
+     * {@link analyzer.Analyzer#analyze(int)} method
+     * 
      */
     public static void main(String[] args) throws InstantiationException,
             IllegalAccessException, IllegalArgumentException,
