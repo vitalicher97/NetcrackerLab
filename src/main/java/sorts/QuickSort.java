@@ -78,7 +78,8 @@ public class QuickSort extends AbstractSorter {
      * 
      * @param arr array to be sorted
      * <br><br>
-     * prepForQuicksort method calls quicksort method and send additional values
+     * prepForQuicksort method calls {@link #quicksort(int[], int, int) }
+     * method and send additional values
      * nedded for quicksort sorting method
      */
     public void prepForQuicksort(int arr[]){
