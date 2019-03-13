@@ -18,7 +18,9 @@ public class Main {
      * <br><br>
      * Main method provides scanning of the user's input and calls
      * {@link analyzer.Analyzer#analyze(int)} method
-     * 
+     * <br>
+     * {@code int inpLen = in.nextInt();} is used for checking if the inputted
+     * values is integer
      */
     public static void main(String[] args) throws InstantiationException,
             IllegalAccessException, IllegalArgumentException,
