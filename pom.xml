@@ -12,8 +12,8 @@
             <version>0.9.11</version>
         </dependency>
         <dependency>
-            <groupId>juint</groupId>
-            <artifactId>juinit</artifactId>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
             <version>4.11</version>
             <scope>test</scope>
         </dependency>
