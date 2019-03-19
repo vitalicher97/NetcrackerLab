@@ -5,10 +5,7 @@ package analyzer;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- *
- * @author Chernetskyi
- */
+
 public class AnalyzerTest {
 
     @Test(timeout=10)
