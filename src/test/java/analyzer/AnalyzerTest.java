@@ -14,9 +14,6 @@ import static org.junit.Assert.*;
  * @author Chernetskyi
  */
 public class AnalyzerTest {
-    
-    public AnalyzerTest() {
-    }
 
     @Test(timeout=10)
     public void testTime() {
