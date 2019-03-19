@@ -25,7 +25,7 @@ public class BubbleSort1Test {
         bubblesort1.bubbleSort1(array);
     }
     
-    @Test(timeout=1000)
+    @Test
     public void testBubbleSort1Correct() {
         System.out.println("bubbleSort1");
         int[] arrayInit = {3, 2, 1, 0, 4};
