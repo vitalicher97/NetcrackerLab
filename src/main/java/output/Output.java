@@ -16,10 +16,11 @@ public class Output {
      * @param duration time to print
      * @param nameSort the name of sort type
      */
-    public void printRes(long duration, String nameSort, String nameFill, int size){
+    public void printRes(long duration, String nameFill, String nameSort,
+            int size){
         
-        System.out.println(nameFill + " " + size + " elements\n" + nameSort);
-        System.out.print(duration + " ns\n\n");
+        System.out.println(nameFill + " " + size + " elements\n" + nameSort + 
+                duration + " ns\n\n");
         
     }
     
