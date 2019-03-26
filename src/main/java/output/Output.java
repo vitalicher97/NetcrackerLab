@@ -16,8 +16,8 @@ public class Output {
      * @param duration time to print
      * @param nameSort the name of sort type
      */
-    public void printRes(long duration, String nameFill, String nameSort,
-            int size){
+    public void printRes(String nameFill, int size, String nameSort,
+            long duration){
         
         System.out.println(nameFill + " " + size + " elements\n" + nameSort + 
                 duration + " ns\n\n");
