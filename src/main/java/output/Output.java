@@ -20,7 +20,7 @@ public class Output {
             long duration){
         
         System.out.println(nameFill + " " + size + " elements\n" + nameSort + 
-                duration + " ns\n\n");
+                ":\n" + duration + " ns\n\n");
         
     }
     
