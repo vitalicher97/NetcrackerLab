@@ -2,12 +2,19 @@
 
 package analyzer;
 
+import output.ExcelOutput;
 import output.*;
 import reflect.*;
 import sorts.*;
 import fillers.*;
+import java.io.IOException;
 import java.util.*;
 import java.lang.reflect.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import com.google.common.collect.HashBasedTable;
+import com.google.common.collect.Table;
 
 /**
  * 
@@ -19,6 +26,7 @@ import java.lang.reflect.*;
 public class Analyzer {
     
     Output print = new Output();
+    ExcelOutput excel = new ExcelOutput();
     
     /**
      * 
@@ -47,33 +55,37 @@ public class Analyzer {
      * methods to recieve generated arrays and to sort them
      */
     public void analyze(int inpLen) throws InstantiationException, IllegalAccessException,
-            IllegalArgumentException, InvocationTargetException{
+            IllegalArgumentException, InvocationTargetException, IOException{
         Reflection refl = new Reflection();
         Fillers fill = new Fillers();
+        ExcelOutput excel = new ExcelOutput();
         int[] arrGen;
         Method[] sortMets;
         long startTime, endTime;
         long duration;
-        //ArrayList<Number> durationList = new ArrayList<Number>();
         Set<Method> annotMets = refl.findGenMethods();
         Set<Class<? extends AbstractSorter>> sortClasses;
         sortClasses = refl.findSortClasses();
-        for(int i = 1; i <= inpLen; i = i + 1){
-            for(Class sortClass : sortClasses){
-                sortMets = refl.findDeclPublMethod(sortClass);
-                Object sort = sortClass.newInstance();
-                for(Method sortMet : sortMets){
-                    for(Method genMet : annotMets){
+        for(Method genMet : annotMets){
+            Table<Integer, String, Number> resTable = HashBasedTable.create();
+            
+            for(int i = 1; i <= inpLen; i = i + 1){
+                for(Class sortClass : sortClasses){
+                    sortMets = refl.findDeclPublMethod(sortClass);
+                    Object sort = sortClass.newInstance();
+                    for(Method sortMet : sortMets){
                         arrGen = (int[]) genMet.invoke(fill, i);
                         startTime = time();
                         sortMet.invoke(sort, arrGen);
                         endTime = time();
                         duration = duration(startTime, endTime);
-                        //durationList.add(duration);
-                        //print.printRes(duration, sortMet.getName());
+                        //print.printRes(genMet.getName(), i, sortMet.getName(), duration);
+                        resTable.put(i, sortMet.getName(), duration);
                     }
                 }
             }
+            excel.excelOutput("Sorting.xls", genMet.getName(), resTable);
+            resTable.clear();
         }
     }
     
